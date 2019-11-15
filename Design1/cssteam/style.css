@@ -1,0 +1,25 @@
+.our-team-heading h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #808a8b;
+  text-transform: uppercase;
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+.box-foreground {
+  background-color: #90d1cb;
+  /* display: none; */
+  position: absolute;
+}
+
+.box-btn button {
+  background-image: url(/images/bg-btn.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+}
+.box-container:hover {
+  background-color: #90d1cb;
+}

@@ -41,5 +41,15 @@
 .main-container {
   background-color: #f3f3f3;
 }
-.page-desc-wrapper {
+.why-choose-wrapper {
+  float: left;
+}
+.col2-right {
+  float: right;
+}
+.data-wrapper {
+  float: left;
+}
+.client-say-wrapper {
+  float: right;
 }
