@@ -1,0 +1,45 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-ruler-wrapper {
+  background-color: #76c7c1;
+  background-image: url("/images/ruler-hr.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* min-width: 1170px; */
+}
+.header-container,
+.title-container,
+.main-content-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+.logo-container {
+  float: left;
+}
+.nav-container {
+  float: right;
+}
+.nav-container ul li {
+  float: left;
+}
+.title-wrapper {
+  background-color: #ececec;
+  line-height: 80px;
+}
+.page-title-container {
+  float: left;
+}
+.breadcrumbs-container {
+  float: right;
+}
+.breadcrumbs-container ul li {
+  float: left;
+}
+.main-container {
+  background-color: #f3f3f3;
+}
+.page-desc-wrapper {
+}
