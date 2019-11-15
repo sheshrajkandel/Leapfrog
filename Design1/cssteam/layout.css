@@ -1,0 +1,19 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.our-team-wrapper {
+  background-image: url(/images/bg-team.png);
+}
+.box-container {
+  background-image: url(/images/no-image.png);
+  width: 270px;
+  border: 1px solid blue;
+  height: 314px;
+}
+
+.our-team-wrapper-measured {
+  width: 1170px;
+  margin: 0px auto;
+}
