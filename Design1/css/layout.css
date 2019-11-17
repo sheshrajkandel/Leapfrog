@@ -58,3 +58,23 @@
   width: 250px;
   padding-left: 30px;
 }
+
+/* Our Team Layout */
+.our-team-wrapper {
+  background-image: url(/images/bg-our-team.png);
+  background-repeat: repeat-x;
+  line-height: 24px;
+}
+.container {
+  width: 73.125em;
+  margin: 0px auto;
+}
+.box-1 {
+  width: 270px;
+  float: left;
+  margin-left: 30px;
+}
+
+.box-1:first-child {
+  margin: 0px;
+}
