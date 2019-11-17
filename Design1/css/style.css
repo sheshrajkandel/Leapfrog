@@ -1,0 +1,110 @@
+.logo-nav-container {
+  line-height: 80px;
+}
+.nav-container ul li {
+  list-style: none;
+}
+.nav-container ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f6ffff;
+  padding: 15px 20px;
+  /* font-size: 10px; */
+}
+/* .nav-container ul li:last-child a {
+  padding-right: 0px;
+} */
+.nav-container ul li:not(:last-child) a:hover {
+  background-color: #61a29e;
+}
+.title-container {
+  color: #7f8585;
+}
+.page-title-container {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.breadcrumbs-container ul li {
+  list-style: none;
+  padding-right: 10px;
+}
+.breadcrumbs-container ul li:last-child {
+  padding-right: 0px;
+}
+.breadcrumbs-container ul li a {
+  text-decoration: none;
+  color: #7f8585;
+}
+.breadcrumbs-container ul li a:hover {
+  text-decoration: underline;
+}
+.page-title h1 {
+  color: #d84d50;
+  padding-top: 54px;
+  padding-bottom: 20px;
+}
+.page-desc p {
+  padding-bottom: 72px;
+  /* font-size: 10px; */
+}
+.why-choose-container h2 {
+  color: #7f8b89;
+  padding-bottom: 36px;
+}
+.arrow {
+  background-image: url(/images/arrow-right.png);
+  background-repeat: no-repeat;
+}
+.why-choose-container ul {
+  list-style: none;
+}
+.why-choose-container ul li {
+  /* font-size: 10px; */
+  line-height: 20px;
+  color: #929695;
+}
+.why-choose-container ul li img {
+  padding-right: 10px;
+}
+.data-container p {
+  padding-bottom: 40px;
+  /* display: inline; */
+}
+.data-container ul {
+  list-style: none;
+}
+.data-container ul li {
+  float: left;
+  text-align: center;
+}
+.data-container ul li label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  color: #767f7e;
+  text-align: center;
+}
+.client-say-wrapper h2 {
+  color: #7f8b89;
+  padding-bottom: 20px;
+}
+.client-say-wrapper p {
+  padding: 16px;
+  background-color: white;
+}
+.data-container ul li img {
+  display: block;
+}
+.comment-name {
+  background-image: url(/images/comment-down.png);
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  padding-top: 10px;
+  line-height: 0px;
+  font-size: 16px;
+  color: #929695;
+}
+.content-data-wrapper {
+  padding-bottom: 50px;
+}

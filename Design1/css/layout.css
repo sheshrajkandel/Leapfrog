@@ -1,0 +1,60 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-ruler-wrapper {
+  background-color: #76c7c1;
+  background-image: url("/images/ruler-hr.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-width: 73.125em;
+}
+.header-container,
+.title-container,
+.main-content-wrapper {
+  width: 73.125em;
+  margin: 0 auto;
+}
+
+.nav-container ul li {
+  float: left;
+}
+.title-wrapper {
+  background-color: #ececec;
+  line-height: 80px;
+  min-width: 73.125em;
+}
+
+.breadcrumbs-container ul li {
+  float: left;
+}
+.main-container {
+  background-color: #f3f3f3;
+  min-width: 73.125em;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.pointer-down {
+  background-image: url(/images/pointer-down.png);
+  background-repeat: no-repeat;
+  /* background-position: left; */
+}
+.why-choose-wrapper {
+  /* margin-right: 90px; */
+  width: 300px;
+}
+.data-wrapper {
+  width: 580px;
+  margin: 0 auto;
+}
+.client-say-wrapper {
+  width: 250px;
+  padding-left: 30px;
+}

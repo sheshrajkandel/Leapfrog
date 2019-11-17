@@ -1,0 +1,46 @@
+
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+.block{
+    display: inline-block;
+    padding: 50px 0px;
+}
+.block h2{
+    padding-bottom: 30px;
+}
+
+.col4-1{
+    width: 270px;
+    float: left;
+    margin-left: 30px;
+}
+.col4-2{
+    width: 570px;
+    float: left;
+    margin-left: 30px;
+}
+.col4-1:first-child{
+    margin:0px;
+}
+
+
+/* header */
+.logo-wrapper, .header-nav{
+    display: inline-block;
+    line-height: 55px;
+}
+.header-nav{
+    float: right;
+    line-height: 45px;
+}
+
+/*about */
+
+.about-head-top .left{
+    display: inline-block;
+}
+
+/* footer*/
