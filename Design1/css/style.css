@@ -195,3 +195,190 @@
   margin: 5px;
   list-style: none;
 }
+
+/* Best Solution */
+.best-solution-wrapper {
+  text-align: center;
+  background: #f3f3f3;
+  line-height: 20px;
+}
+
+.best-solution-wrapper h1 {
+  padding-bottom: 20px;
+  color: red;
+}
+
+.best-solution-wrapper .container {
+  padding: 60px 0px;
+}
+
+.best-solution-wrapper p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.best-solution-wrapper span {
+  font-size: 14px;
+}
+
+/* Happy Clients */
+.happy-clients-wrapper {
+  background: #f3f3f3;
+}
+.happy-top {
+  display: block;
+  background: url("../images/happy-hr.pn");
+  background-repeat: repeat-x;
+  background-position: left;
+}
+.happy-top h3 {
+  font-size: 14px;
+  color: #7b8a87;
+}
+.happy-top ul {
+  float: right;
+  background: #f3f3f3;
+}
+.happy-top ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+.happy-top ul a {
+  padding: 10px 12px;
+  background: url("../images/btn-disable.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.happy-top ul a:hover {
+  background: url("../images/btn-enable.png");
+  background-size: cover;
+}
+.happy-clients-wrapper .happy-top h3 {
+  padding-right: 25px;
+  background-color: #f3f3f3;
+  background: url("../images/boolet-circle.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.happy-main {
+  display: block;
+  padding: 42px 0px;
+}
+
+.happy-top ul li {
+  list-style: none;
+}
+
+.happy-main ul li {
+  float: left;
+  margin-left: 30px;
+  width: 170px;
+  list-style: none;
+}
+.happy-main ul li:first-child {
+  margin: 0px;
+}
+
+/* Footer  */
+.footer-container * {
+  color: white;
+}
+
+.footer-top-wrapper {
+  background: url("../images/footer-background.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.footer-bottom-wrapper {
+  background: #6bb4ad;
+}
+
+.footer-top-content {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer-tollens {
+  width: 375px;
+  float: left;
+}
+
+.footer-tollens p,
+.footer-tollens ul li,
+.footer-tollens ul li span {
+  color: white;
+}
+
+.footer-tollens ul {
+  padding-top: 20px;
+}
+
+.footer-tollens ul li span {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.footer-col-middle {
+  width: 150px;
+  float: left;
+  margin-left: 40px;
+}
+
+.footer-block ul {
+  padding-top: 25px;
+}
+
+.white-arrow {
+  padding-left: 20px;
+  line-height: 25px;
+  background: url("../images/white-arrow.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.in-blog p {
+  float: right;
+  padding-left: 17px;
+  width: 300px;
+}
+
+.dark {
+  color: #4a7875;
+}
+
+.blog-header h2 {
+  font-style: italic;
+}
+
+.blog-header h2 span {
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.in-blog span {
+  color: #4a7875;
+}
+
+.right ul li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.logo-wrapper {
+  padding-bottom: 20px;
+}
+.footer-top-content ul li {
+  list-style: none;
+}
+.footer-tollens ul li span {
+  font-size: 16px;
+  font-style: italic;
+}
+.footer-top-content ul li a {
+  text-decoration: none;
+}

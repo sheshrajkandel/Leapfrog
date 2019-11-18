@@ -48,14 +48,14 @@
 }
 .why-choose-wrapper {
   /* margin-right: 90px; */
-  width: 300px;
+  width: 305px;
 }
 .data-wrapper {
-  width: 580px;
+  width: 585px;
   margin: 0 auto;
 }
 .client-say-wrapper {
-  width: 250px;
+  width: 245px;
   padding-left: 30px;
 }
 
@@ -66,8 +66,8 @@
   line-height: 24px;
 }
 .container {
-  width: 73.125em;
-  margin: 0px auto;
+  width: 73.13em;
+  margin: 0 auto;
 }
 .box-1 {
   width: 270px;
@@ -77,4 +77,33 @@
 
 .box-1:first-child {
   margin: 0px;
+}
+
+/* Footer */
+.footer-container {
+  max-width: 1174px;
+  margin: 0 auto;
+  padding: 0;
+}
+.footer-block {
+  display: inline-block;
+  padding: 22px 0px;
+}
+.footer-blog {
+  float: right;
+  padding: 22px 0;
+}
+
+.blog-holder {
+  display: inline-block;
+  padding-top: 23px;
+}
+.left {
+  float: left;
+  padding: 20px 0;
+}
+
+.right {
+  float: right;
+  padding: 20px 0;
 }
