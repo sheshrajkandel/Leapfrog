@@ -3,6 +3,8 @@
   clear: both;
   display: table;
 }
+
+/* Header */
 .header-ruler-wrapper {
   background-color: #76c7c1;
   background-image: url("/images/ruler-hr.png");
@@ -12,7 +14,8 @@
 }
 .header-container,
 .title-container,
-.main-content-wrapper {
+.main-content-wrapper,
+.container {
   width: 73.125em;
   margin: 0 auto;
 }
@@ -46,38 +49,8 @@
   background-repeat: no-repeat;
   /* background-position: left; */
 }
-.why-choose-wrapper {
-  /* margin-right: 90px; */
-  width: 305px;
-}
-.data-wrapper {
-  width: 585px;
-  margin: 0 auto;
-}
-.client-say-wrapper {
-  width: 245px;
-  padding-left: 30px;
-}
 
-/* Our Team Layout */
-.our-team-wrapper {
-  background-image: url(/images/bg-our-team.png);
-  background-repeat: repeat-x;
-  line-height: 24px;
-}
-.container {
-  width: 73.13em;
-  margin: 0 auto;
-}
-.box-1 {
-  width: 270px;
-  float: left;
-  margin-left: 30px;
-}
-
-.box-1:first-child {
-  margin: 0px;
-}
+/* Main Body  */
 
 /* Footer */
 .footer-container {
@@ -106,4 +79,24 @@
 .right {
   float: right;
   padding: 20px 0;
+}
+
+.burger-menu {
+  background-image: url("../images/burger-menu.png");
+  background-repeat: no-repeat;
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  /* For mobile */
+  .header-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-container ul {
+    display: none;
+  }
+  .burger-menu:hover .nav-container ul {
+    display: block;
+    width: 100%;
+  }
 }

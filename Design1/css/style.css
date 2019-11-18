@@ -289,7 +289,6 @@
 .footer-top-wrapper {
   background: url("../images/footer-background.png");
   background-repeat: repeat-x;
-  background-size: contain;
 }
 
 .footer-bottom-wrapper {
@@ -298,7 +297,6 @@
 
 .footer-top-content {
   padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 .footer-tollens {
