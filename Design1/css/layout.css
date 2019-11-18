@@ -61,7 +61,7 @@
 
 /* Our Team Layout */
 .our-team-wrapper {
-  background-image: url(/images/bg-our-team.png);
+  background-image: url("../images/bg-our-team.png");
   background-repeat: repeat-x;
   line-height: 24px;
 }
