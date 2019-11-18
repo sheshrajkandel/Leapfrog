@@ -1,46 +1,109 @@
-
-.container{
-    max-width: 1170px;
-    margin: 0px auto;
-    padding: 20px 0px;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.block{
-    display: inline-block;
-    padding: 50px 0px;
+.header-ruler-wrapper {
+  background-color: #76c7c1;
+  background-image: url("/images/ruler-hr.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-width: 73.125em;
 }
-.block h2{
-    padding-bottom: 30px;
-}
-
-.col4-1{
-    width: 270px;
-    float: left;
-    margin-left: 30px;
-}
-.col4-2{
-    width: 570px;
-    float: left;
-    margin-left: 30px;
-}
-.col4-1:first-child{
-    margin:0px;
+.header-container,
+.title-container,
+.main-content-wrapper {
+  width: 73.125em;
+  margin: 0 auto;
 }
 
-
-/* header */
-.logo-wrapper, .header-nav{
-    display: inline-block;
-    line-height: 55px;
+.nav-container ul li {
+  float: left;
 }
-.header-nav{
-    float: right;
-    line-height: 45px;
+.title-wrapper {
+  background-color: #ececec;
+  line-height: 80px;
+  min-width: 73.125em;
 }
 
-/*about */
-
-.about-head-top .left{
-    display: inline-block;
+.breadcrumbs-container ul li {
+  float: left;
+}
+.main-container {
+  background-color: #f3f3f3;
+  min-width: 73.125em;
 }
 
-/* footer*/
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.pointer-down {
+  background-image: url(/images/pointer-down.png);
+  background-repeat: no-repeat;
+  /* background-position: left; */
+}
+.why-choose-wrapper {
+  /* margin-right: 90px; */
+  width: 305px;
+}
+.data-wrapper {
+  width: 585px;
+  margin: 0 auto;
+}
+.client-say-wrapper {
+  width: 245px;
+  padding-left: 30px;
+}
+
+/* Our Team Layout */
+.our-team-wrapper {
+  background-image: url(/images/bg-our-team.png);
+  background-repeat: repeat-x;
+  line-height: 24px;
+}
+.container {
+  width: 73.13em;
+  margin: 0 auto;
+}
+.box-1 {
+  width: 270px;
+  float: left;
+  margin-left: 30px;
+}
+
+.box-1:first-child {
+  margin: 0px;
+}
+
+/* Footer */
+.footer-container {
+  max-width: 1174px;
+  margin: 0 auto;
+  padding: 0;
+}
+.footer-block {
+  display: inline-block;
+  padding: 22px 0px;
+}
+.footer-blog {
+  float: right;
+  padding: 22px 0;
+}
+
+.blog-holder {
+  display: inline-block;
+  padding-top: 23px;
+}
+.left {
+  float: left;
+  padding: 20px 0;
+}
+
+.right {
+  float: right;
+  padding: 20px 0;
+}
