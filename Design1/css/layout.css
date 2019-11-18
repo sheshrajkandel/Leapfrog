@@ -5,7 +5,7 @@
 }
 .header-ruler-wrapper {
   background-color: #76c7c1;
-  background-image: url("/images/ruler-hr.png");
+  background-image: url("../images/ruler-hr.png");
   background-repeat: no-repeat;
   background-position: bottom;
   min-width: 73.125em;
@@ -42,7 +42,7 @@
 }
 
 .pointer-down {
-  background-image: url(/images/pointer-down.png);
+  background-image: url("../images/pointer-down.png");
   background-repeat: no-repeat;
   /* background-position: left; */
 }

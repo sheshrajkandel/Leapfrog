@@ -49,10 +49,10 @@
   color: #7f8b89;
   padding-bottom: 36px;
 }
-.arrow {
+/* .arrow {
   background-image: url(/images/arrow-right.png);
   background-repeat: no-repeat;
-}
+} */
 .why-choose-container ul {
   list-style: none;
 }
@@ -92,7 +92,7 @@
   display: block;
 }
 .comment-name {
-  background-image: url(/images/comment-down.png);
+  background-image: url("../images/comment-down.png");
   background-repeat: no-repeat;
   padding-left: 60px;
   padding-top: 10px;
