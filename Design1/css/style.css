@@ -141,7 +141,7 @@
 
 .our-team .foreground-box {
   position: absolute;
-  background: url("/images/box-green.png");
+  background: url("../images/box-green.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 10;
@@ -174,15 +174,14 @@
   line-height: 54px;
   text-decoration: none;
   display: block;
-  background: url("/images/btn-gray.png");
+  background: url("../images/btn-gray.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  display: block;
 }
 
 .our-team .box-1:hover .team-btn a {
-  background: url("/images/btn-red.png");
+  background: url("../images/btn-red.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-decoration: none;
