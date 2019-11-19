@@ -20,14 +20,12 @@ nav ul li:last-child {
 }
 nav ul li a:hover {
   background-color: #2f8be6;
-  border-radius: 5px;
+  border-radius: 4px;
 }
+
 .cart-login ul li {
   padding: 0px 10px;
 }
-/* .cart-login ul li a {
-  padding: 15px 26px;
-} */
 .cart-login ul li:first-child {
   background-image: url("../images/separator.png");
   background-repeat: no-repeat;
@@ -44,15 +42,49 @@ nav ul li a:hover {
   background-color: #676b6d;
   padding: 5px;
 }
-
 .link-active {
   background-color: #2f8be6;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 15px 26px;
 }
-
 .logo-nav-container {
   background-image: url("../images/hr-nav.png");
   background-repeat: repeat-x;
   background-position: bottom;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-size: 62px;
+  color: #ffffff;
+  padding-top: 116px;
+  line-height: 76px;
+  font-weight: 400;
+}
+header p {
+  color: #dae1e7;
+  padding-top: 33px;
+  font-size: 20px;
+}
+.desc-btns ul {
+  padding-top: 41px;
+  display: inline-block;
+}
+.desc-btns ul li {
+  float: left;
+  font-size: 18px;
+}
+.desc-btns ul li:first-child {
+  padding-right: 15px;
+}
+.desc-btns ul li a {
+  padding: 23px 26px;
+  background-color: #86919d;
+  border-radius: 4px;
+}
+.desc-btns ul li a:hover {
+  background-color: #2f8be6;
+  border-radius: 4px;
 }

@@ -29,7 +29,11 @@ nav ul li {
 .cart-login {
   float: right;
 }
-
 .cart-login ul li {
   float: left;
+}
+
+header {
+  width: 830px;
+  margin: 0px auto;
 }
