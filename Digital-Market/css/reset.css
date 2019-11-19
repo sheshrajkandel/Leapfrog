@@ -1,4 +1,12 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+li {
+  list-style: none;
 }

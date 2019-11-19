@@ -5,6 +5,31 @@
 }
 
 .container {
-  min-width: 73.125em;
+  width: 73.125em;
   margin: 0px auto;
+}
+
+.logo {
+  float: left;
+  padding-top: 23px;
+}
+.burger-menu {
+  float: right;
+  padding: 35px 0px;
+}
+.nav-container {
+  float: right;
+}
+nav {
+  float: left;
+}
+nav ul li {
+  float: left;
+}
+.cart-login {
+  float: right;
+}
+
+.cart-login ul li {
+  float: left;
 }
