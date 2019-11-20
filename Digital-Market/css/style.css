@@ -38,9 +38,10 @@ nav ul li a:hover {
 }
 .quantity {
   border: 1px solid #676b6d;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: #676b6d;
-  padding: 5px;
+  padding: 0px 3px;
+  font-size: small;
 }
 .link-active {
   background-color: #2f8be6;
@@ -87,4 +88,7 @@ header p {
 .desc-btns ul li a:hover {
   background-color: #2f8be6;
   border-radius: 4px;
+}
+.desc-btns {
+  padding-bottom: 117px;
 }
