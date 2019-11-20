@@ -1,5 +1,6 @@
 .main-wrapper {
   background-color: #f1f5f8;
+  min-width: 1170px;
 }
 .header-nav-wrapper {
   background-image: url("../images/bg-header.png");
@@ -126,6 +127,52 @@ form {
   background-color: #ffffff;
   border-radius: 4px;
 }
-main {
-  background-color: black;
+
+/* Filter By */
+.filter-by-wrapper .container span {
+  float: left;
+  text-transform: uppercase;
+  padding-right: 25px;
+  line-height: 42px;
+  color: #a2adb8;
+}
+.nav-filter ul li:not(:first-child) {
+  margin-left: 5px;
+}
+.nav-filter ul li a {
+  padding: 12px 15px;
+  background-color: #dae1e7;
+  color: #454545;
+}
+
+/* Cart Container */
+.cart-container {
+  box-shadow: 0px 0px 3px 0px #dae1e7;
+}
+.product-desc {
+  padding: 0px 25px;
+}
+.product-desc h2 {
+  font-size: 18px;
+  padding-top: 30px;
+}
+.product-desc a {
+  text-decoration: none;
+  color: #212121;
+}
+.product-desc p {
+  color: #454545;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background-image: url("../images/hr-cart-sep.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.seller-price {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.seller-name span {
+  color: #86919d;
 }

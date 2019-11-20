@@ -37,3 +37,39 @@ nav ul li {
   width: 830px;
   margin: 0px auto;
 }
+
+/* Filter By */
+.products-wrapper {
+  padding-top: 20px;
+}
+
+.nav-filter ul li a {
+  float: left;
+  padding: 0px;
+}
+.nav-filter {
+  float: none;
+}
+
+/* Products Cart Wrapper */
+.products-cart-wrapper {
+  padding-top: 60px;
+}
+.cart-container {
+  width: 370px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.back-box {
+  background-image: url("../images/item1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 280px;
+}
+.seller-name img {
+  float: left;
+  padding-right: 8px;
+}
+.price {
+  float: right;
+}
