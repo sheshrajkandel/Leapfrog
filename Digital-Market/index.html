@@ -9,69 +9,93 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/layout.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <main>
-        <div class="header-nav-wrapper">
-            <div class="container">
-                <div class="logo-nav-container clearfix">
-                    <div class="logo">
-                        <a href="#">
-                            <figure><img src="./images/logo-header.png" alt="digital-market-logo"></figure>
-                        </a>
-                    </div>
-                    <div class="burger-menu">
-                        <img src="./images/burger-menu.png" alt="mobile-nav">
-                    </div>
-                    <div class="nav-container clearfix">
-                        <nav>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">All Items</a></li>
-                                <li><a href="#">Freebies</a></li>
-                                <li><a href="#">Premium</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
+    <div class="main-wrapper">
+        <header>
+            <div class="header-nav-wrapper">
+                <div class="container">
+                    <div class="logo-nav-container clearfix">
+                        <div class="logo">
+                            <a href="#">
+                                <figure><img src="./images/logo-header.png" alt="digital-market-logo"></figure>
+                            </a>
+                        </div>
+                        <div class="burger-menu">
+                            <img src="./images/burger-menu.png" alt="mobile-nav">
+                        </div>
+                        <div class="nav-container clearfix">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">All Items</a></li>
+                                    <li><a href="#">Freebies</a></li>
+                                    <li><a href="#">Premium</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
 
-                        </nav>
-                        <div class="cart-login">
-                            <ul>
+                            </nav>
+                            <div class="cart-login">
+                                <ul>
 
-                                <li><a href="#">
-                                        <figure><img src="./images/search.png" alt="search"></figure>
-                                    </a></li>
-                                <li><a href="#">
-                                        <figure><img src="./images/cart.png" alt="cart"><span class="quantity">10</span>
-                                        </figure>
-                                    </a></li>
+                                    <li><a href="#">
+                                            <figure><img src="./images/search.png" alt="search"></figure>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <figure><img src="./images/cart.png" alt="cart"><span
+                                                    class="quantity">10</span>
+                                            </figure>
+                                        </a></li>
 
-                                <li><a href="#" class="link-active">LOGIN</a></li>
-                            </ul>
+                                    <li><a href="#" class="link-active">LOGIN</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <header>
-                    <h1>Most Selective Market of Digital Products for Creatives.</h1>
-                    <div class="desc-btns">
-                        <p>Curated Design Resources to Energize Your Creative Workflow.</p>
-                        <ul>
-                            <li><a href="#">View All Products</a></li>
-                            <li><a href="#">See Our Pricing</a></li>
-                        </ul>
+                    <div class="page-heading">
+                        <h1>Most Selective Market of Digital Products for Creatives.</h1>
+                        <div class="desc-btns">
+                            <p>Curated Design Resources to Energize Your Creative Workflow.</p>
+                            <ul>
+                                <li><a href="#">View All Products</a></li>
+                                <li><a href="#">See Our Pricing</a></li>
+                            </ul>
+                        </div>
+
                     </div>
-
-                </header>
+                </div>
             </div>
-        </div>
-        <div class="products-wrapper"></div>
-        <div class="subscribe-wrapper"></div>
-        <div class="testimonials-wrapper"></div>
-        <div class="mockups-wrapper"></div>
-        <div class="footer-wrapper"></div>
+            <div class="input-search-wrapper">
+                <div class="container">
+                    <form action="#">
 
-    </main>
+                        <select name="categories">
+                            <option value="entire-site">Entire Site</option>
+                            <option value="art-direction">Art Direction</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="identity-design">Identity Design</option>
+                        </select>
+
+                        <input type="text" placeholder="&#xF002; Search  Your Keyword..."
+                            style="font-family:Arial, FontAwesome" />
+                        <input type="submit" value="Search" />
+                </div>
+                </form>
+
+            </div>
+        </header>
+        <main>
+            <section class="products-wrapper"></section>
+            <section class="subscribe-wrapper"></section>
+            <section class="testimonials-wrapper"></section>
+            <section class="mockups-wrapper"></section>
+        </main>
+        <footer>
+
+        </footer>
 
 </body>
 

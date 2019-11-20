@@ -1,3 +1,6 @@
+.main-wrapper {
+  background-color: #f1f5f8;
+}
 .header-nav-wrapper {
   background-image: url("../images/bg-header.png");
   background-repeat: no-repeat;
@@ -54,17 +57,17 @@ nav ul li a:hover {
   background-position: bottom;
 }
 
-header {
+.page-heading {
   text-align: center;
 }
-header h1 {
+.page-heading h1 {
   font-size: 62px;
   color: #ffffff;
   padding-top: 116px;
   line-height: 76px;
   font-weight: 400;
 }
-header p {
+.page-heading p {
   color: #dae1e7;
   padding-top: 33px;
   font-size: 20px;
@@ -91,4 +94,38 @@ header p {
 }
 .desc-btns {
   padding-bottom: 117px;
+}
+.form {
+  background-color: #ffffff;
+}
+form select,
+input {
+  padding: 30px;
+  font-size: 16px;
+  color: #9c9c9c;
+  background: #ffffff;
+  border: none;
+}
+form input[type="text"] {
+  width: 73%;
+  box-sizing: border-box;
+  background-image: url("../images/separator-input.png");
+  background-repeat: no-repeat;
+}
+form input[type="submit"] {
+  background-color: #2f8be6;
+  color: #ffffff;
+  border-radius: 4px;
+}
+form {
+  margin-top: -35px;
+}
+.input-search-wrapper .container {
+  border-bottom: 1px solid #efefef;
+  box-shadow: 1px 2px #efefef;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+main {
+  background-color: black;
 }
