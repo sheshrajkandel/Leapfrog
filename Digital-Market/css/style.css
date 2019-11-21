@@ -66,7 +66,7 @@ nav ul li a:hover {
   color: #ffffff;
   padding-top: 116px;
   line-height: 76px;
-  font-weight: 400;
+  font-weight: normal;
 }
 .page-heading p {
   color: #dae1e7;
@@ -155,9 +155,7 @@ input {
   margin-right: 29px;
   margin-bottom: 30px;
 }
-.m-right-zero {
-  margin-right: 0px;
-}
+
 .product-desc {
   padding: 0px 25px;
 }
@@ -316,7 +314,7 @@ input {
 }
 .plan-desc h2 {
   font-size: 30px;
-  color: #212121;
+  color: #21272c;
   font-weight: normal;
   line-height: 45px;
 }
@@ -389,7 +387,6 @@ input {
 }
 .sign-up-wrapper h2 {
   font-size: 34px;
-  font-weight: normal;
   color: #21272c;
 }
 .sign-up-wrapper p {
@@ -412,9 +409,100 @@ input {
 }
 .sign-up-wrapper input[type="submit"] {
   padding: 24px;
-  background: #a2adb8;
+  background: #2f8be6;
   font-size: 18px;
   color: white;
   border-radius: 0px 4px 4px 0px;
   margin-left: -4px;
+}
+
+/* Testimonials */
+.testimonials-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.testimonials-heading {
+  text-align: center;
+  /* margin-top: 100px; */
+}
+.testimonials-heading h2 {
+  font-size: 32px;
+  color: #21272c;
+  padding-bottom: 20px;
+}
+.testimonials-heading p {
+  font-size: 20px;
+  color: #86919d;
+}
+
+.testimonials-box {
+  width: 570px;
+  margin-top: 60px;
+  float: left;
+  margin-right: 29px;
+}
+.comment {
+  background-image: url("../images/bg-comment-box.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  min-height: 130px;
+}
+.comment p {
+  color: #454545;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.person-info figure img {
+  border-radius: 50%;
+  float: left;
+  margin-left: 30px;
+  border: 4px solid #dae1e7;
+}
+.person-info ul {
+  float: left;
+  margin-left: 16px;
+  line-height: 26px;
+  padding: 12px 0px;
+}
+.person-info ul li a {
+  color: #454545;
+  font-weight: bold;
+}
+.person-info ul li:last-child {
+  font-size: 14px;
+  color: #a2adb8;
+}
+
+/* Mockups Wrapper */
+.mockups-wrapper {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.mockups-wrapper h2 {
+  font-size: 34px;
+  color: #21272c;
+}
+.mockups-wrapper p {
+  color: #86919d;
+  font-size: 20px;
+  line-height: 50px;
+}
+.mockups-wrapper a {
+  padding: 22px 26px;
+  box-shadow: 1px 2px #efefef;
+}
+.mockups-wrapper .purchase-btn a {
+  display: inline-block;
+}
+.mockups-wrapper .purchase-btn {
+  padding-top: 40px;
+}
+/* Margin-right: Zero */
+.m-right-zero {
+  margin-right: 0px;
 }
