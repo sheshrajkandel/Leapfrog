@@ -281,6 +281,7 @@ form {
 /* Purchase Box Wrapper */
 .purchase-box-wrapper {
   margin-top: 30px;
+  padding-bottom: 100px;
 }
 
 .purchase-box {
@@ -376,4 +377,10 @@ form {
   background: #2f8be6;
   border-radius: 4px;
   margin: 0px 30px;
+}
+
+/* Sign Up Wrapper */
+.sign-up-wrapper {
+  text-align: center;
+  background-color: #dae1e7;
 }
