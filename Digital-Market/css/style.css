@@ -279,12 +279,17 @@ form {
 }
 
 /* Purchase Box Wrapper */
+.purchase-box-wrapper {
+  margin-top: 30px;
+}
+
 .purchase-box {
   width: 370px;
   background: #ffffff;
   border-radius: 4px;
+  margin-right: 19px;
   margin-top: 20px;
-  /* height: 546px; */
+  float: left;
   padding: 52px 0px;
   position: relative;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
@@ -298,6 +303,10 @@ form {
   top: 20px;
   background: url("../images/recommended.png");
   background-repeat: no-repeat;
+}
+.recommended {
+  padding: 70px 0px;
+  margin-top: 0px;
 }
 .plan-desc {
   text-align: center;
