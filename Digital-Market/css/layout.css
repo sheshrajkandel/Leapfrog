@@ -42,13 +42,16 @@ nav ul li {
 .products-wrapper {
   padding-top: 20px;
 }
-
+.nav-filter {
+  float: none;
+}
 .nav-filter ul li a {
   float: left;
   padding: 0px;
+  border-radius: 4px;
 }
-.nav-filter {
-  float: none;
+.nav-filter ul li a:hover {
+  color: #ffffff;
 }
 
 /* Products Cart Wrapper */
@@ -66,10 +69,18 @@ nav ul li {
   background-repeat: no-repeat;
   height: 280px;
 }
-.seller-name img {
+.seller-name {
+  float: left;
+  padding-top: 7px;
+}
+.seller-name figure {
   float: left;
   padding-right: 8px;
 }
 .price {
   float: right;
+  padding: 7px 11px;
+  background-color: #f1f5f8;
+  border-radius: 4px;
 }
+s

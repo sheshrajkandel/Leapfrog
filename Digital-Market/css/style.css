@@ -169,10 +169,56 @@ form {
   background-position: bottom;
 }
 .seller-price {
+  color: #86919d;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.seller-name span {
+.seller-price a,
+.price {
+  font-weight: bold;
   color: #86919d;
+}
+.product-desc h2 a:hover {
+  border-bottom: 1px dotted blue;
+  color: #2f8be6;
+}
+
+.front-box {
+  background-color: rgb(33, 33, 33);
+  opacity: 0.9;
+  height: 280px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  /* display: none; */
+}
+.top-icons {
+  background: #ebebeb;
+  margin: 7px;
+  padding: 2px;
+  float: left;
+  border-radius: 5px;
+}
+.top-icons ul li {
+  float: left;
+  margin-right: 10px;
+}
+.top-icons ul li a figure {
+  display: inline-block;
+  padding-right: 7px;
+}
+.top-icons ul li a {
+  color: #212121;
+}
+
+.middle-icons {
+  float: left;
+  margin-top: 120px;
+  position: absolute;
+  margin-left: 140px;
+}
+.middle-icons ul li {
+  float: left;
+  margin: 7px;
 }
