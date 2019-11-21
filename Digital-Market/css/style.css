@@ -96,36 +96,39 @@ nav ul li a:hover {
 .desc-btns {
   padding-bottom: 117px;
 }
-.form {
+.input-search-wrapper form {
   background-color: #ffffff;
+  margin-top: -40px;
+  border-radius: 4px;
 }
-form select,
+.input-search-wrapper form select {
+  background-color: #ffffff;
+  border-top-left-radius: 4px;
+}
+.input-search-wrapper form select,
 input {
   padding: 30px;
   font-size: 16px;
   color: #9c9c9c;
-  background: #ffffff;
   border: none;
 }
-form input[type="text"] {
+.input-search-wrapper form input[type="text"] {
   width: 73%;
   box-sizing: border-box;
   background-image: url("../images/separator-input.png");
   background-repeat: no-repeat;
 }
-form input[type="submit"] {
+.input-search-wrapper form input[type="submit"] {
   background-color: #2f8be6;
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
+  padding: 31px 33px;
 }
-form {
-  margin-top: -35px;
-}
+
 .input-search-wrapper .container {
   border-bottom: 1px solid #efefef;
   box-shadow: 1px 2px #efefef;
-  background-color: #ffffff;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 /* Filter By */
@@ -259,7 +262,6 @@ form {
   margin-top: -26px;
 }
 .loading-img {
-  outline: 1px dotted red;
   padding-top: 30px;
   padding-bottom: 60px;
   text-align: center;
@@ -381,6 +383,38 @@ form {
 
 /* Sign Up Wrapper */
 .sign-up-wrapper {
+  padding: 100px 0px;
   text-align: center;
   background-color: #dae1e7;
+}
+.sign-up-wrapper h2 {
+  font-size: 34px;
+  font-weight: normal;
+  color: #21272c;
+}
+.sign-up-wrapper p {
+  color: #86919d;
+  font-size: 20px;
+  line-height: 40px;
+}
+.sign-up-desc {
+  margin-bottom: 30px;
+}
+.sign-up-wrapper form p {
+  font-size: 13px;
+}
+.sign-up-wrapper input {
+  padding: 25px 15px;
+}
+.sign-up-wrapper input[type="text"] {
+  width: 460px;
+  border-radius: 4px 0px 0px 4px;
+}
+.sign-up-wrapper input[type="submit"] {
+  padding: 24px;
+  background: #a2adb8;
+  font-size: 18px;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
+  margin-left: -4px;
 }
