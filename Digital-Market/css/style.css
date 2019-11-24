@@ -322,6 +322,11 @@ input {
   padding: 70px 0px;
   margin-top: 0px;
 }
+.recommended {
+  margin-top: 0px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
 .plan-desc {
   text-align: center;
 }
