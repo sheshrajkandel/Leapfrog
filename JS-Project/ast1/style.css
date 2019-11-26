@@ -1,0 +1,19 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.carousel-container {
+	width: 400px;
+	height: 291px;
+	overflow: hidden;
+	position: relative;
+}
+.carousel-image-wrapper {
+	position: absolute;
+	left: 0px; /*js*/
+	/* width: 2000px; js */
+}
+.carousel-image-wrapper img {
+	float: left;
+}
