@@ -8,11 +8,11 @@
 	height: 291px;
 	overflow: hidden;
 	position: relative;
+	margin: 50px auto;
 }
 .carousel-image-wrapper {
 	position: absolute;
 	left: 0px; /*js*/
-	/* width: 2000px; js */
 }
 .carousel-image-wrapper img {
 	float: left;

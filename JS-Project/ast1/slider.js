@@ -43,7 +43,39 @@ function carousel(timer) {
 	}
 	styleToBtnNext();
 
+	btnPrev.addEventListener("click", () => slidePrevious());
 	btnNext.addEventListener("click", () => slideNext());
+
+	function createIndicators(imageLength) {
+		var indicators = document.createElement("ul");
+		indicators.setAttribute("id", "indicators");
+
+		for (var i = 0; i < imageLength; i++) {
+			var listItem = document.createElement("li");
+			styleToIndicators();
+			indicators.appendChild(listItem);
+		}
+		container.append(indicators);
+
+		function styleToIndicators() {
+			indicators.style.position = "absolute";
+			indicators.style.bottom = "0px";
+			indicators.style.textAlign = "center";
+			indicators.style.width = "100%";
+
+			listItem.style.display = "inline-table";
+			listItem.style.listStyle = "none";
+			listItem.style.width = "10px";
+			listItem.style.height = "10px";
+			listItem.style.backgroundColor = "#DCDCDC";
+			listItem.style.borderRadius = "50%";
+			listItem.style.border = "1px solid white";
+			listItem.style.padding = "3px";
+			listItem.style.marginRight = "5px";
+		}
+	}
+
+	createIndicators(imgLength);
 
 	function slideNext() {
 		if (imgCount == imgLength - 1) {
@@ -51,31 +83,45 @@ function carousel(timer) {
 			shiftPrevious(0, 50);
 		} else {
 			imgCount++;
-			var shiftPosLeft = -(imgWidth * imgCount);
-			shiftNext(shiftPosLeft, 20);
+			var posLeftShift = -(imgWidth * imgCount);
+			shiftNext(posLeftShift, 20);
 		}
 	}
 
 	function shiftNext(left, pixel) {
 		var nextSlide = setInterval(function() {
 			posLeft -= pixel;
-			console.log("posLeft: ", posLeft);
+			//console.log("posLeft: ", posLeft);
 			wrapper.style.left = posLeft + "px";
 		}, 15);
 
 		setInterval(function() {
 			if (posLeft > left) {
+				// console.log("Left: ", left);
 				nextSlide;
 			} else {
 				clearInterval(nextSlide);
+				// console.log("hello");
 			}
 		}, 15);
 	}
 
+	function slidePrevious() {
+		if (imgCount !== 0) {
+			var posLeftShift = posLeft + imgWidth;
+			console.log("posLeftshift: ", posLeft);
+			shiftPrevious(posLeftShift, 20);
+			imgCount--;
+		} else {
+			imgCount = imgLength - 1;
+			var posLeftShift = -(imgCount * imgWidth);
+			shiftPrevious(posLeftShift, 50);
+		}
+	}
 	function shiftPrevious(left, pixel) {
 		var previousSlide = setInterval(function() {
 			posLeft += pixel;
-			console.log("posLeft -Prev: ", posLeft);
+			//console.log("posLeft -Prev: ", posLeft);
 			wrapper.style.left = posLeft + "px";
 		}, 15);
 
