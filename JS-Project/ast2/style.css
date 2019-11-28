@@ -1,0 +1,24 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.carousel-container {
+	width: 400px;
+	height: 291px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+}
+.carousel-image-wrapper {
+	position: absolute;
+	left: 0px;
+}
+.carousel-image-wrapper img {
+	float: left;
+}
+
+.active {
+	background-color: yellow;
+	border-color: black;
+}
