@@ -1,8 +1,12 @@
 var holdTime = 2000;
-var container = document.getElementsByClassName('carousel-container')[0];
 
+var container = document.getElementsByClassName('carousel-container')[0];
 var carousel1 = new Carousel(container, holdTime);
 carousel1.createCarousel();
+
+var container = document.getElementsByClassName('carousel-container')[1];
+var carousel2 = new Carousel(container, holdTime);
+carousel2.createCarousel();
 
 function Carousel(parentElement, holdTime) {
 	var FPS = 60;
