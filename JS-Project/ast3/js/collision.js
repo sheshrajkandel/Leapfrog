@@ -1,4 +1,5 @@
 (function() {
+	score = 0;
 	var DIRECTION = [-5, -4, -3, 3, 4, 5];
 	var WIDTHS = [50, 50];
 	var MASS = [30, 40, 50];
@@ -41,15 +42,21 @@
 			this.boxElement.classList.add('BoxStyle');
 
 			this.boxElement.style.backgroundColor = COLORS[this.index] + '';
-			this.boxElement.style.left = this.boxX + 'px';
-			this.boxElement.style.top = this.boxY + 'px';
 
+			this.scoreElement = document.getElementById('score');
+			this.boxElement.onclick = this.boxClicked.bind(this);
 			this.parentElement.appendChild(this.boxElement);
 		};
 
 		this.setDirection = function(a, b) {
 			this.dx = DIRECTION[a];
 			this.dy = DIRECTION[b];
+		};
+
+		this.boxClicked = function() {
+			score++;
+			//console.log(score);
+			this.scoreElement.innerHTML = score;
 		};
 
 		this.reverseXDirection = function() {
@@ -130,7 +137,6 @@
 			var radiusSquare = radiusSum * radiusSum;
 
 			if (distance <= radiusSquare) {
-				console.log(true);
 				return true;
 			} else {
 				return false;
