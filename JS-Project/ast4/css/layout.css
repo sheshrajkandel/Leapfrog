@@ -44,3 +44,10 @@
     font-weight: 600;
     font-family: sans-serif;
 }
+
+#restart-button {
+	position: absolute;
+	left: 45%;
+	top: 480px;
+	padding: 5px;
+}

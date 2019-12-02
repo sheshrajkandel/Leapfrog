@@ -32,6 +32,9 @@ class CarRacing {
       this.thumbImg.src = './images/other-car.png';
       this.thumbImg2 = document.createElement('img');
       this.thumbImg2.src = './images/player-car.png';
+
+      this.restartButton = document.getElementById('restart-button');
+
    }
 
   movingCarSetup = () =>{
@@ -73,7 +76,7 @@ class CarRacing {
 
   generateCars = () =>{
       this.xPos[this.carCount] = this.generateCarPosition();
-      this.yPos[this.carCount] = -70;
+      this.yPos[this.carCount] = -50;
       this.drawCar(this.xPos[this.carCount], this.yPos[this.carCount]);
       this.carCount += 1;
   }
@@ -139,7 +142,7 @@ class CarRacing {
 
   generatePlayerCar = () =>{
       this.playerCar = this.ctx.drawImage(this.thumbImg2, this.playerPosition, this.playerPositionY, 40, 60);
-      this.playerCar;
+      //this.playerCar;
   }
 
   movePlayerPosition = () =>{
@@ -183,7 +186,9 @@ class CarRacing {
 var game = new CarRacing();
 game.startGame();
 
-
+restartGame = () => {
+  document.location.reload();
+}
 
 
 
