@@ -14,7 +14,7 @@
     width: 264px;
     height: 400px;
     background: url('../images/car_track.png');
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 #game-over{

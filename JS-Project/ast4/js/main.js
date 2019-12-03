@@ -11,6 +11,9 @@ class CarRacing {
       this.cars = [];
       this.yPos = [];
       this.xPos = [];
+      this.bulletPosX = [];
+      this.bulletPosY = [];
+      this.bulletCount = 0;
       this.carCount = 0;
 
       this.score = 0;
@@ -23,15 +26,25 @@ class CarRacing {
       }
 
       this.playerPosition = this.carPositionCordinate.laneTwo;
+      this.bulletPositionX = this.playerPosition + 5;
       this.playerCar;
       this.removeIndex = null;
       this.playerPositionY = this.canvas.height - 70;
+      this.bulletPositionY = this.playerPositionY;
       this.collision = false;
 
       this.thumbImg = document.createElement('img');
       this.thumbImg.src = './images/other-car.png';
       this.thumbImg2 = document.createElement('img');
       this.thumbImg2.src = './images/player-car.png';
+
+      this.bulletImg = document.createElement('img');
+      this.bulletImg.src = './images/bullet.png';
+      this.bullets = [];
+      this.bulletPosX = [];
+      this.bulletPosY = [];
+      this.bulletCount = 0;
+      this.bulletCollision = false;
 
       this.restartButton = document.getElementById('restart-button');
 
@@ -143,6 +156,7 @@ class CarRacing {
   generatePlayerCar = () =>{
       this.playerCar = this.ctx.drawImage(this.thumbImg2, this.playerPosition, this.playerPositionY, 40, 60);
       //this.playerCar;
+      this.generateBullet();
   }
 
   movePlayerPosition = () =>{
@@ -150,20 +164,42 @@ class CarRacing {
           if (this.collision == false) {
               switch (e.keyCode) {
                   case 37:
-                      if (this.playerPosition == this.carPositionCordinate.laneTwo) this.playerPosition = this.carPositionCordinate.laneOne;
-                      if (this.playerPosition == this.carPositionCordinate.laneThree) this.playerPosition = this.carPositionCordinate.laneTwo;
-                      break;
+                      if (this.playerPosition == this.carPositionCordinate.laneTwo) {
+                        this.playerPosition = this.carPositionCordinate.laneOne;
+                        //this.bulletPositionX = this.carPositionCordinate.laneOne + 5;
+                        break;
+                      }
+                      if (this.playerPosition == this.carPositionCordinate.laneThree) {
+                        this.playerPosition = this.carPositionCordinate.laneTwo;
+                        //this.bulletPositionX = this.carPositionCordinate.laneTwo + 5;
+                        break;
+                      }
 
                   case 39:
-                      if (this.playerPosition == this.carPositionCordinate.laneTwo) this.playerPosition = this.carPositionCordinate.laneThree;
-                      if (this.playerPosition == this.carPositionCordinate.laneOne) this.playerPosition = this.carPositionCordinate.laneTwo;
-                      break;
+                      if (this.playerPosition == this.carPositionCordinate.laneTwo) {
+                        this.playerPosition = this.carPositionCordinate.laneThree;
+                        //this.bulletPositionX = this.carPositionCordinate.laneThree + 5;
+                        break;
+                    }
+
+                      if (this.playerPosition == this.carPositionCordinate.laneOne) {
+                        this.playerPosition = this.carPositionCordinate.laneTwo;
+                        //this.bulletPositionX = this.carPositionCordinate.laneTwo + 5;
+                        break;
+                      }
+
+                  case 38:
+                      this.generateBullet();
+                      this.moveBullet();
+                      this.checkBulletCollision();
+                      break; 
+                    }
               }
           }
       };
-  }
 
   checkCollision = () =>{
+    // console.log('carCount: ', this.xPos[1]);
       for (var i=0; i<this.carCount; i++){
           if (this.xPos[i] < this.playerPosition + 40 &&
               this.xPos[i] + 40 > this.playerPosition &&
@@ -179,6 +215,43 @@ class CarRacing {
 
           return false;
       }
+  }
+
+  generateBullet = () => {
+    this.bulletPosX[this.bulletCount] = this.playerPosition;
+    this.bulletPosY[this.bulletCount] = 330;
+    this.drawBullet(this.bulletPosX[this.bulletCount], this.bulletPosY[this.bulletCount]);
+    // console.log('bulletY: ', this.bulletPosY[this.bulletCount]);
+    this.bulletCount += 1;
+
+  }
+
+  drawBullet = (x,y,i) => {
+    this.bullets[i] = this.ctx.drawImage(this.bulletImg, x, y, 30, 40);
+    // console.log('Bullets: ', this);
+  }
+
+  moveBullet = () => {
+    for(var i=0; i<this.bulletCount; i++) {
+      this.bulletPosY[i] -= 2;
+      console.log('moveBullet: ', this.bulletPosY[i]);
+      this.drawBullet(this.bulletPosX[i], this.bulletPosY[i]);
+    }
+  }
+
+  checkBulletCollision = () =>{
+    for (var i=0; i<this.bulletCount; i++){
+        if (this.yPos[i] < this.bulletPosY[i] + 40 &&
+            this.yPos[i] + 60 > this.bulletPosY[i]) {
+            this.bulletCollision = true;
+            console.log('bulletCollision Test: ', this.bulletCollision);
+            return true;
+        }
+        if(this.bulletPosY <= 0) {
+          console.log('Bullet Y: ', this.bulletPosY);
+        }
+        return false;
+    }
   }
 
 }
