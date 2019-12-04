@@ -1,6 +1,5 @@
 .canvas {
     border: 1px solid lightcoral;
     display: block;
-    margin: 50px 100px;
-    float: left;
+    margin: 50px auto;
 }

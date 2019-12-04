@@ -43,7 +43,7 @@ class Bird{
         }
 
         if(this.up[0] == true){
-            this.y -= 20;
+            this.y -= 15;
             this.velocity -= 0.7;
             this.gravity =0;
             this.up[0] = false;
@@ -59,7 +59,7 @@ class Bird{
 
         if(this.gravity == 0){
             this.gravity = 3 * 0.01;
-            this.velocity += 0.2;
+            this.velocity += 0.1;
         }
     
 
