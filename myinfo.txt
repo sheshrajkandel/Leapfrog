@@ -1,4 +1,5 @@
 Name: Sheshraj Kandel
+Address: Kathmandu, Nepal
 College: Lovely Professional University
-Hobby: Music, Sport
+Hobby: Coding, Music, Cooking
 Age: 25 yrs.
