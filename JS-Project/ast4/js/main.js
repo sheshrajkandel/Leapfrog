@@ -228,14 +228,18 @@ class CarRacing {
 
   drawBullet = (x,y,i) => {
     this.bullets[i] = this.ctx.drawImage(this.bulletImg, x, y, 30, 40);
-    // console.log('Bullets: ', this);
+    console.log('Bullets: ', this.bulletPositionX[i]);
   }
 
   moveBullet = () => {
     for(var i=0; i<this.bulletCount; i++) {
-      this.bulletPosY[i] -= 2;
-      console.log('moveBullet: ', this.bulletPosY[i]);
-      this.drawBullet(this.bulletPosX[i], this.bulletPosY[i]);
+      var intervalBullet = setInterval(() => {
+        this.bulletPosY[i] -= 2;  
+        this.drawBullet(this.bulletPosX[i], this.bulletPosY[i]);
+      }, 50);
+      
+      //console.log('moveBullet: ', this.bulletPosY[i]);
+      
     }
   }
 
