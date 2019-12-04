@@ -3,8 +3,8 @@ class Bird{
         this.currentState = currentState;
         this.image = bgImage;
         this.context = context;
-        this.cropx = 276;
-        this.cropy = 112;
+        this.sX = 276;
+        this.sY = 112;
         this.cropwidth = 36;
         this.cropheight = 26;
         this.x = 50;
@@ -23,17 +23,17 @@ class Bird{
     draw(){
         switch(this.select) {
             case 0:
-                this.cropy = 112;           
+                this.sY = 112;           
               break;
             case 1:
-                this.cropy = 138;
+                this.sY = 138;
               break;
             case 2:
-                this.cropy = 164;
+                this.sY = 164;
               break;
           }
 
-        this.context.drawImage(this.image,this.cropx,this.cropy,this.cropwidth,this.cropheight,this.x,this.y,this.width,this.height);
+        this.context.drawImage(this.image,this.sX,this.sY,this.cropwidth,this.cropheight,this.x,this.y,this.width,this.height);
         this.selectControl ++;
         
 

@@ -1,7 +1,8 @@
 
 
-#canvas {
+.canvas {
     border: 1px solid lightcoral;
     display: block;
-    margin: 50px auto;
+    margin: 50px 100px;
+    float: left;
 }
