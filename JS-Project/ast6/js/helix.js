@@ -1,59 +1,79 @@
 class Helix {
-  constructor() {
-    this.ROWS = 5;
-    this.COLS = 5;
+  constructor(canvas) {
+    this.ROWS = 15;
+    this.COLS = 15;
     this.maxRadius = 10;
-    this.radius = 10;
-    this.frameCount = 0;
-    this.height = 100;
-    this.width = 100;
-    this.time = 0;
+    this.currentX = 0;
+    this.time = 0.01;
     this.x = 0;
     this.y = 0;
-
+    this.colors = ['red', 'pink']
+    this.colorChange = 0;
 
     this.canvas = document.getElementById('canvas');
-    this.ctx = canvas.getContext('2d');
-
+    this.ctx = this.canvas.getContext('2d');
   }
 
   drawCircle = () => {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
     this.ctx.beginPath();
-    this.ctx.fillStyle = '#dd00ee';
+    this.ctx.fillStyle = '#212121';
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    this.ctx.closePath();
 
-    this.time += 0.03;
-    for (var rows = 0; rows < this.ROWS; rows++) {
-      // this.x += 50;
-      for (var cols = 0; cols < this.COLS; cols++) {
-        this.x = this.canvas.height / 2 + Math.sin(this.time) * this.canvas.height / 4;
-        this.y = this.canvas.height / 2 + Math.sin(this.time) * this.canvas.height / 4;
-        this.radius = 12 + Math.sin(this.time) * this.maxRadius;
-        this.width = Math.sin(this.time) * 50;
-        this.height = Math.sin(this.time) * 50;
+    this.currentX++;
+    this.phase = this.currentX * this.time;
 
-        this.ctx.fillStyle = '#454545'
-        this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-        this.ctx.fill();
+    this.colorChange++;
+
+    for (var count = 0; count < 1; count++) {
+      if (count === 0) {
+        this.strandPhase = this.phase;
+      } else {
+        this.strandPhase = this.phase + count * Math.PI;
+      }
+
+      this.x = 0;
+      this.colOffset = 0;
+      this.strandPhase = this.phase + Math.PI;
+
+      for (var rows = 0; rows < this.ROWS; rows++) {
+        this.x += 30;
+        this.colOffset = (rows * 2 * Math.PI) / 10;
+
+        for (var cols = 0; cols < this.COLS; cols++) {
+
+          this.y = this.canvas.height / 4 + cols * 20 + Math.sin(this.strandPhase + this.colOffset) * 50;
+          var radiusOffset = (Math.cos(this.strandPhase - (cols * 0.1) + this.colOffset) + 1) * 0.5;
+          var radius = radiusOffset * this.maxRadius;
+
+          this.ctx.beginPath();
+
+          setTimeout(() => {
+            this.i = this.colorChange % 2;
+
+
+          }, 1000);
+          // var i = this.colorChange % 2;
+          this.ctx.fillStyle = this.colors[this.i];
+          this.ctx.arc(this.x, this.y, radius, 0, 2 * Math.PI, false);
+          this.ctx.closePath();
+          this.ctx.fill();
+
+        }
       }
     }
-
-
-    console.log('Hello', this.y);
-    requestAnimationFrame(this.drawCircle);
+    this.raf = requestAnimationFrame(this.drawCircle);
+    setTimeout(() => {
+      cancelAnimationFrame(this.raf);
+    }, 10000);
 
   }
-
-  // this.ctx.beginPath();
-  // this.ctx.fillStyle = '#dd00ee';
-  // this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-  // this.ctx.arc(x, y, this.RADIUS, 0, 2 * Math.PI);
-  // this.ctx.stroke();
-  //console.log(this.NUM_CIRCLES++);
-
 }
 
-var objHelix = new Helix();
-objHelix.drawCircle();
+var canvas1 = new Helix();
+canvas1.drawCircle();
+
+// var canvas2 = new Helix();
+// canvas2.drawCircle();
