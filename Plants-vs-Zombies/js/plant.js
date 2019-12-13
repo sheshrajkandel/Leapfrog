@@ -93,14 +93,14 @@ Plant.prototype.setPosition = function(l,c) {
 	this.x = c * 60 + 60/2;
 }
 Plant.prototype.draw = function() {
-	cxt.fillStyle = this.isDamaged ? '#fff' : this.color;
-	cxt.fillRect( this.x - this.w/2, this.y - this.h, this.w,this.h);
-	cxt.strokeRect( this.x - this.w/2, this.y - this.h, this.w,this.h);	
+	ctx.fillStyle = this.isDamaged ? '#fff' : this.color;
+	ctx.fillRect( this.x - this.w/2, this.y - this.h, this.w,this.h);
+	ctx.strokeRect( this.x - this.w/2, this.y - this.h, this.w,this.h);	
 
 	//Display health
-	cxt.font = '16px Arial';
-	cxt.fillStyle = '#fff';
-	cxt.fillText(this.health,this.x - 15,this.y - 20);
+	ctx.font = '16px Arial';
+	ctx.fillStyle = '#fff';
+	ctx.fillText(this.health,this.x - 15,this.y - 20);
 }
 
 Plant.prototype.update = function() {}

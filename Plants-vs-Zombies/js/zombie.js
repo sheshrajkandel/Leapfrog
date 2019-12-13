@@ -102,15 +102,15 @@ Zombie.prototype.update = function() {
 }
 
 Zombie.prototype.draw = function() {
-	cxt.fillStyle = this.isDamaged ? 'red' : '#777';
-	cxt.fillRect( this.x - this.w/2, this.y - this.h, this.w,this.h);
-	cxt.strokeStyle = '#fff';
-	cxt.strokeRect( this.x - this.w/2, this.y - this.h, this.w,this.h);
+	ctx.fillStyle = this.isDamaged ? 'red' : '#777';
+	ctx.fillRect( this.x - this.w/2, this.y - this.h, this.w,this.h);
+	ctx.strokeStyle = '#fff';
+	ctx.strokeRect( this.x - this.w/2, this.y - this.h, this.w,this.h);
 
 	//Display zombie helth
-	cxt.font = '16px Arial';
-	cxt.fillStyle = '#fff';
-	cxt.fillText(this.health,this.x - 10,this.y - 20);
+	ctx.font = '16px Arial';
+	ctx.fillStyle = '#fff';
+	ctx.fillText(this.health,this.x - 10,this.y - 20);
 }
 
 Zombie.prototype.setDamage = function(damage) {

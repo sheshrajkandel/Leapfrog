@@ -1,4 +1,4 @@
-var cxt,map;
+var ctx,map;
 
 (function(){
 
@@ -21,7 +21,7 @@ function PlantsVsZombies() {
 	this.height = 400;
 	canvas.width  = this.width;
 	canvas.height = this.height;
-	cxt = canvas.getContext("2d");
+	ctx = canvas.getContext("2d");
 
 	mCanvas.width  = this.width;
 	mCanvas.height = this.height;
@@ -302,16 +302,16 @@ function PlantsVsZombies() {
 			_this.animate();
 		} else {
 			_this.isPaused = true;
-			cxt.save();
-			cxt.globalAlpha = 0.7;
-			cxt.fillStyle = '#333';
-			cxt.fillRect(0,0,this.width,this.height);
-			cxt.globalAlpha = 1;
-			cxt.fillStyle = '#fff'
-			cxt.font = '40px Impact';
+			ctx.save();
+			ctx.globalAlpha = 0.7;
+			ctx.fillStyle = '#333';
+			ctx.fillRect(0,0,this.width,this.height);
+			ctx.globalAlpha = 1;
+			ctx.fillStyle = '#fff'
+			ctx.font = '40px Impact';
 			var text = 'P A U S E D'
-			cxt.fillText(text, this.width/2 - cxt.measureText(text).width/2, this.height/2 + 20);
-			cxt.restore();
+			ctx.fillText(text, this.width/2 - ctx.measureText(text).width/2, this.height/2 + 20);
+			ctx.restore();
 
 		}
 	}
@@ -391,8 +391,8 @@ function PlantsVsZombies() {
 			var l = parseInt((this.mouse.y - levelOffset ) / 60);
 			if( l >= 0 && l < 5 && c >= 0 && c < 9 ) {
 				if( ! this.plants[l] || ! this.plants[l][c] ) {
-					cxt.fillStyle = '#7f7'
-					cxt.fillRect(c*60, levelOffset + l * 60, 60,60);	
+					ctx.fillStyle = '#7f7'
+					ctx.fillRect(c*60, levelOffset + l * 60, 60,60);	
 					this.activeCell = {c:c,l:l}
 				} else {
 					this.activeCell = null;
@@ -424,10 +424,10 @@ function PlantsVsZombies() {
 		if( this.drag ) {
 			this.dragObject.plant.x = this.mouse.x;
 			this.dragObject.plant.y = this.mouse.y + this.dragObject.plant.h/2;
-			cxt.save();
-			cxt.globalAlpha = 0.5
+			ctx.save();
+			ctx.globalAlpha = 0.5
 			this.dragObject.plant.draw();
-			cxt.restore();
+			ctx.restore();
 		}
 
 
@@ -435,12 +435,12 @@ function PlantsVsZombies() {
 			var c = parseInt(this.mouse.x / 60);
 			var l = parseInt((this.mouse.y - levelOffset ) / 60);
 			if( l >= 0 && l < 5 && c >= 0 && c < 9 ) {
-				cxt.save();
-				cxt.fillStyle = '#f00'
-				cxt.globalAlpha = 0.3;
-				cxt.fillRect(c*60, levelOffset + l * 60, 60,60);	
-				cxt.restore();
-				cxt.drawImage($('img-shovel'), c*60 + 5 , levelOffset + l * 60 + 5, 50 , 50);
+				ctx.save();
+				ctx.fillStyle = '#f00'
+				ctx.globalAlpha = 0.3;
+				ctx.fillRect(c*60, levelOffset + l * 60, 60,60);	
+				ctx.restore();
+				ctx.drawImage($('img-shovel'), c*60 + 5 , levelOffset + l * 60 + 5, 50 , 50);
 				this.cellToRemove = {c:c,l:l}
 			} else {
 				this.cellToRemove = null;
@@ -479,7 +479,7 @@ function PlantsVsZombies() {
 	}
 
 	this.clearCanvas = function() {
-		cxt.clearRect(0, 0, this.width, this.height);
+		ctx.clearRect(0, 0, this.width, this.height);
 	}
 	
 }

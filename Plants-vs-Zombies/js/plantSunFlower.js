@@ -43,16 +43,16 @@ Sun = function (x,y,flower) {
 Sun.prototype.draw = function () {
 	var p = this.getPosition();
 	
-	cxt.save();
-	cxt.beginPath();
-	cxt.arc( p.x, p.y, this.radius,  rad(0) , rad(360), false );
-	cxt.fillStyle = 'red';
-	cxt.fill();
-	cxt.lineWidth = 3;
-	cxt.strokeStyle = 'yellow';
-	cxt.stroke();
-	cxt.closePath();
-	cxt.restore();
+	ctx.save();
+	ctx.beginPath();
+	ctx.arc( p.x, p.y, this.radius,  rad(0) , rad(360), false );
+	ctx.fillStyle = 'red';
+	ctx.fill();
+	ctx.lineWidth = 3;
+	ctx.strokeStyle = 'yellow';
+	ctx.stroke();
+	ctx.closePath();
+	ctx.restore();
 }
 
 Sun.prototype.update = function () {

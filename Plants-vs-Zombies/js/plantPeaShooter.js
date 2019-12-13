@@ -49,7 +49,7 @@ PlantPeaseShooter.prototype.update = function() {
 PlantPeaseShooter.prototype.draw = function() {
 	//Plant.prototype.draw.apply(this);
 
-	cxt.drawImage( this.image, this.x - this.w , this.y -60, 80,80)
+	ctx.drawImage( this.image, this.x - this.w , this.y -60, 80,80)
 
 	if( this.shots.length) {
 		for( var i = this.shots.length;i--;){
@@ -95,20 +95,20 @@ Shot.prototype.explode = function() {
 }
 
 Shot.prototype.draw = function() {
-	cxt.save();
-	cxt.beginPath();
-	cxt.arc(this.x, this.y, this.radius,  rad(0) , rad(360), false );
+	ctx.save();
+	ctx.beginPath();
+	ctx.arc(this.x, this.y, this.radius,  rad(0) , rad(360), false );
 	
-	var grd = cxt.createLinearGradient(this.x,this.y,this.x+10,this.y + 10);
+	var grd = ctx.createLinearGradient(this.x,this.y,this.x+10,this.y + 10);
 	grd.addColorStop(0, '#A2DC41');
 	grd.addColorStop(1, '#5E9406');
 
 
-	cxt.fillStyle = grd;
+	ctx.fillStyle = grd;
 	
-	cxt.fill();
-	cxt.lineWidth = 1;
-	cxt.strokeStyle = '#5E9406';
-	cxt.stroke();
-	cxt.closePath();
+	ctx.fill();
+	ctx.lineWidth = 1;
+	ctx.strokeStyle = '#5E9406';
+	ctx.stroke();
+	ctx.closePath();
 }
