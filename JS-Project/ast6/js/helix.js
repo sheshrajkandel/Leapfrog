@@ -49,14 +49,8 @@ class Helix {
           var radius = radiusOffset * this.maxRadius;
 
           this.ctx.beginPath();
-
-          setTimeout(() => {
-            this.i = this.colorChange % 2;
-
-
-          }, 1000);
-          // var i = this.colorChange % 2;
-          this.ctx.fillStyle = this.colors[this.i];
+          var i = this.colorChange % 2;
+          this.ctx.fillStyle = this.colors[i];
           this.ctx.arc(this.x, this.y, radius, 0, 2 * Math.PI, false);
           this.ctx.closePath();
           this.ctx.fill();
